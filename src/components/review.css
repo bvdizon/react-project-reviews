@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: silver;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+}
+figure {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+figure::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 5%;
+  left: 5%;
+  background-color: royalblue;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.quote {
+  color: #fff;
+  font-size: 60px;
+  padding: 1rem;
+
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: 2;
+  background-color: royalblue;
+  border-radius: 50%;
+}
+
+#container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+#container section {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 50px 0;
+  border-radius: 3px;
+}
+
+section p {
+  margin: 20px;
+  line-height: 1.8;
+}
+
+section span {
+  margin: 10px 30px;
+  color: royalblue;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+section button {
+  border: none;
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
